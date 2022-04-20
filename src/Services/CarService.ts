@@ -1,5 +1,5 @@
 import CarStrategyContext from "../Domain/Context/CarStrategyContext";
-import ICarStrategy from "../Domain/Interface/ICar";
+import ICarStrategy from "../Domain/Interface/ICarStrategy";
 import FuscaStrategy from "../Domain/Strategy/Car/FuscaStrategy";
 import GolStrategy from "../Domain/Strategy/Car/GolStrategy";
 import PrismaStrategy from "../Domain/Strategy/Car/PrismaStrategy";

@@ -1,4 +1,4 @@
-import ICarStrategy from "../../Interface/ICar";
+import ICarStrategy from "../../Interface/ICarStrategy";
 
 export default class PrismaStrategy implements ICarStrategy{
     public getBrand(): object{
