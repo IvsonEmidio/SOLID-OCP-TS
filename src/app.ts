@@ -1,13 +1,14 @@
 import express, { Request, Response } from "express";
-import CarService from "./Services/CarService";
+import Bee from "./Animals/Bee";
+import FlyerAnimalService from "./Services/AnimalsService";
 
 const app = express();
 const port = 3000;
 
-app.get("/car-brand/:carName", (req: Request, res: Response) => {
-  const carName = req.params.carName;
-  const service = new CarService(carName);
-  const result = service.getBrand();
+app.get("/flyer-animal", (req: Request, res: Response) => {
+  const animal = new Bee();
+  const service = new FlyerAnimalService(animal);
+  const result = service.fly();
 
   res.status(200).json({
     result,
